@@ -12,8 +12,7 @@ RUN apt-get update && \
   apt-get install -y \
     jq \
     libltdl-dev \
-    python-pip python-dev \
-    build-essential \
+    python-pip \
     wget && \
   pip install -U pip && \
   pip install awscli
