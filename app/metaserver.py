@@ -13,7 +13,7 @@ WORKER_SG_ID = os.environ['WORKER_SECURITY_GROUP_ID']
 
 docker_client = docker.from_env()
 aws_client = boto3.client('ec2', region_name=AWS_REGION)
-boto3.client('ecs')
+boto3.client('ecs', region_name=AWS_REGION)
 app = Flask(__name__)
 
 
